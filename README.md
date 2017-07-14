@@ -13,7 +13,7 @@ To use the S2I builder image directly with the ``s2i`` command line tool, instal
 and run:
 
 ```
-s2i build <source-files> openshift-katacoda/s2i-http-server <image-name>
+s2i build <source-files> openshift-katacoda/simple-http-server <image-name>
 ```
 
 Replace ``<source-files>`` with a local file system path, or a URL for a hosted
@@ -34,13 +34,13 @@ Using the Builder Image with OpenShift
 If using OpenShift, to directly import the S2I builder image run:
 
 ```
-oc import-image openshiftkatacoda/s2i-http-server --confirm
+oc import-image openshiftkatacoda/simple-http-server --confirm
 ```
 
 To create an application and deploy it from the command line, then run:
 
 ```
-oc new-app s2i-http-server~<source-files> --name <application-name>
+oc new-app simple-http-server~<source-files> --name <application-name>
 oc expose svc/<application-name>
 ```
 
@@ -49,9 +49,9 @@ Replace ``<source-files>`` with a URL for a hosted Git repository which contains
 In order to be able to use the S2I builder from the catalog available in the web console, instead run:
 
 ```
-oc create -f https://raw.githubusercontent.com/openshift-katacoda/s2i-http-server/master/imagestream.json
+oc create -f https://raw.githubusercontent.com/openshift-katacoda/simple-http-server/master/imagestream.json
 ```
 
 Alternatively visit the URL for the raw imagestream JSON file and cut and paste the contents in to the "Import YAML/JSON" page of the web console under "Add to project".
 
-The S2I builder should then be able to be found by searching for "s2i-http-server" in the catalog. In addition to being able to select it from the catalog, an application can still be created using ``oc new-app`` as shown above.
+The S2I builder should then be able to be found by searching for "simple-http-server" in the catalog. In addition to being able to select it from the catalog, an application can still be created using ``oc new-app`` as shown above.

@@ -2,7 +2,7 @@
     "kind": "ImageStream",
     "apiVersion": "v1",
     "metadata": {
-        "name": "s2i-http-server"
+        "name": "simple-http-server"
     },
     "spec": {
         "tags": [
@@ -13,7 +13,7 @@
                 },
                 "from": {
                     "kind": "DockerImage",
-                    "name": "openshiftkatacoda/s2i-http-server:latest"
+                    "name": "openshiftkatacoda/simple-http-server:latest"
                 }
             }
         ]
