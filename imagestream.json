@@ -8,6 +8,9 @@
         "tags": [
             {
                 "name": "latest",
+                "annotations": {
+                    "tags": "builder"
+                },
                 "from": {
                     "kind": "DockerImage",
                     "name": "openshiftkatacoda/s2i-http-server:latest"
