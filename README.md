@@ -34,7 +34,7 @@ Using the Builder Image with OpenShift
 If using OpenShift, to directly import the S2I builder image run:
 
 ```
-oc import-image openshift-katacoda/s2i-http-server --confirm
+oc import-image openshiftkatacoda/s2i-http-server --confirm
 ```
 
 To create an application and deploy it from the command line, then run:

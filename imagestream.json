@@ -10,7 +10,7 @@
                 "name": "latest",
                 "from": {
                     "kind": "DockerImage",
-                    "name": "openshift-katacoda/s2i-http-server:latest"
+                    "name": "openshiftkatacoda/s2i-http-server:latest"
                 }
             }
         ]
