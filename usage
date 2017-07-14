@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cat <<EOF
+This is a S2I builder image for running a simple HTTP server. For
+instructions on using the S2I builder image see:
+
+* https://github.com/openshift-katacoda/s2i-http-server
+EOF

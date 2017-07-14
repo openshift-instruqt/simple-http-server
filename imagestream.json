@@ -1,0 +1,18 @@
+{
+    "kind": "ImageStream",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "s2i-http-server"
+    },
+    "spec": {
+        "tags": [
+            {
+                "name": "latest",
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "openshift-katacoda/s2i-http-server:latest"
+                }
+            }
+        ]
+    }
+}

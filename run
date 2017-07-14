@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo " -----> Run HTTP server."
+
+exec python -m SimpleHTTPServer 8080
