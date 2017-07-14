@@ -52,4 +52,6 @@ In order to be able to use the S2I builder from the catalog available in the web
 oc create -f https://raw.githubusercontent.com/openshift-katacoda/s2i-http-server/master/imagestream.json
 ```
 
+Alternatively visit the URL for the raw imagestream JSON file and cut and paste the contents in to the "Import YAML/JSON" page of the web console under "Add to project".
+
 The S2I builder should then be able to be found by searching for "Simple HTTP Server" in the catalog. In addition to being able to select it from the catalog, an application can still be created using ``oc new-app`` as shown above.
