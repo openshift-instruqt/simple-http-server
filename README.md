@@ -1,7 +1,7 @@
 Simple HTTP server
 ==================
 
-This repository contains a sample implementation of a simple [Source-to-Image (S2I)](https://github.com/openshift/source-to-image) enabled container image for running a simple HTTP server.
+This repository contains a sample implementation of a [Source-to-Image (S2I)](https://github.com/openshift/source-to-image) enabled container image for running a simple HTTP server.
 
 Using the ``s2i`` Command Line Tool
 -----------------------------------
