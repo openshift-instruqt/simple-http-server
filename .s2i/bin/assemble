@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -eo pipefail
+
+# Move assemble/run scripts to new location.
+
+mkdir /opt/app-root/s2i
+
+mv /tmp/src/* /opt/app-root/s2i
+
+# Override image metadata for builder image.
+
+mkdir -p /tmp/.s2i
+
+cat > /tmp/.s2i/image_metadata.json << !
+{
+  "labels": [
+    { "io.openshift.s2i.scripts-url": "image:///opt/app-root/s2i" }
+  ]
+}
+!
