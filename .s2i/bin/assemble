@@ -12,10 +12,10 @@ mv /tmp/src/* /opt/app-root/s2i
 
 mkdir -p /tmp/.s2i
 
-cat > /tmp/.s2i/image_metadata.json << !
+cat > /tmp/.s2i/image_metadata.json << EOF
 {
   "labels": [
     { "io.openshift.s2i.scripts-url": "image:///opt/app-root/s2i" }
   ]
 }
-!
+EOF
